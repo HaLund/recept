@@ -1,18 +1,24 @@
 html {
-    background-color: darksalmon;
+    background-color: hsla(0, 60%, 75%, 0.9) /*darksalmon;*/
 }
 
 body {
-    width: 900px;
+    width: 1200px;
     /*text-align: center;*/
     margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 20px 20px 20px;
+    margin-bottom: 40px;
+    /*padding: 30px 30px 30px 30px;*/
     background-color: white;
+}
+
+#content {
+    padding: 35px 35px 35px 35px;
 }
 
 img {
     display: block;
-    margin: 0 auto;
-    max-width: 900px;
+    /*margin: 0 auto;*/
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
 }
