@@ -1,0 +1,18 @@
+html {
+    background-color: darksalmon;
+}
+
+body {
+    width: 900px;
+    /*text-align: center;*/
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px;
+    background-color: white;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+}
