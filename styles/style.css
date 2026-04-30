@@ -1,9 +1,10 @@
 html {
-    background-color: hsla(0, 60%, 75%, 0.9) /*darksalmon;*/
+    background-color: #DC9B9B; /*hsla(0, 60%, 75%, 0.9)*/ /*darksalmon;*/
 }
 
 body {
-    width: 1200px;
+    /*width: 1200px;*/
+    max-width: 1200px;
     /*text-align: center;*/
     margin: 0 auto;
     margin-bottom: 40px;
@@ -12,13 +13,24 @@ body {
 }
 
 #content {
-    padding: 35px 35px 35px 35px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
 }
 
-img {
-    display: block;
-    /*margin: 0 auto;*/
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
+@media ( max-width: 26.25em ) {
+    h1 {
+        font-size: 1.4em;
+    }
 }
+
+/*img {
+    display: block;
+    margin: 0 auto;
+    margin: 0;
+    padding: 0;*/
+    /*max-width: 1200px;*/
+    /*width: 100%;
+    height: auto;
+}*/
