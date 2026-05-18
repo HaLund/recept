@@ -13,6 +13,10 @@
 html {
     background-color: #DC9B9B;
     font-family: Open Sans, Sans-serif, "Times New Roman", Times, serif;
+
+    font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -21,6 +25,7 @@ body {
     margin-bottom: 40px;
     background-color: white;
     font-size: 1.0rem;
+    line-height: 1.5rem;
 }
 
 #content {
@@ -29,6 +34,13 @@ body {
     padding-right: 35px;
     padding-bottom: 35px;
 }
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 h1 {
     color: #b04242; 
