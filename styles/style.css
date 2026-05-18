@@ -20,6 +20,7 @@ body {
     margin: 0 auto;
     margin-bottom: 40px;
     background-color: white;
+    font-size: 1.0rem;
 }
 
 #content {
@@ -31,6 +32,16 @@ body {
 
 h1 {
     color: #b04242; 
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 @media ( max-width: 1199px ) {
@@ -68,6 +79,19 @@ h1 {
     padding: 10px;
 }
 
-ul {
-    text-align: left;
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+ul{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ol{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
