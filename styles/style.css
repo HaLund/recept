@@ -1,12 +1,13 @@
-html {
-    background-color: #DC9B9B;
-    font-family: Open Sans, Sans-serif, "Times New Roman", Times, serif;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font:inherit;
+}
+
+html {
+    background-color: #DC9B9B;
+    font-family: Open Sans, Sans-serif, "Times New Roman", Times, serif;
 }
 
 body {
