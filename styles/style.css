@@ -1,3 +1,5 @@
+/* CSS reset */
+
 *{
     margin: 0;
     padding: 0;
@@ -10,12 +12,19 @@
   box-sizing: border-box;
 }
 
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Custom styles */
 :root {
   --color-primary: #b04242;
   --bg-color-primary: #DC9B9B;
   --bg-color-secondary: white;
   --bg-color-footer: #f1f1f1;
   --color-footer: #333;
+  --font-family-primary: "Special Elite", system-ui;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
   --font-size-small: 0.8rem;
@@ -26,8 +35,7 @@
 }
 
 html {
-    font-family: Open Sans, Sans-serif, "Times New Roman", Times, serif;
-    font-family: "Special Elite", system-ui;
+    font-family: var(--font-family-primary, "Special Elite", system-ui);
     font-weight: var(--font-weight-normal, 400);
     font-style: normal;
 }
@@ -39,32 +47,6 @@ body {
     font-size: var(--font-size-medium, 1.0rem);
     line-height: 1.5rem;
 }
-
-.main {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.content {
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-}
-
-.footer {
-    text-align: center;
-    padding: 1.25rem;
-    background-color: var(--bg-color-footer, #f1f1f1);
-    color: var(--color-footer, #333);
-}
-
-.special-elite-regular {
-  font-family: "Special Elite", system-ui;
-  font-weight: var(--font-weight-normal, 400);
-  font-style: normal;
-}
-
 
 h1 {
     color: var(--color-primary, #b04242); 
@@ -87,12 +69,41 @@ h2 {
     }
 }
 
+.content {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
 .imgBanner {
     margin-left: 0;
     padding-left: 0;
     text-align: left;
     width: 100%;
     height: auto;
+}
+
+.p_Upper {
+    background-color: lightgray;
+    padding: 1.25rem;
+}
+
+.main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+ul{
+    padding-left: 1.25rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+
+ol{
+    padding-left: 1.25rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
 }
 
 .imgServSuggestOne {
@@ -111,24 +122,9 @@ h2 {
     padding-top: 1.25rem;
 }
 
-.p_Upper {
-    background-color: lightgray;
+.footer {
+    text-align: center;
     padding: 1.25rem;
-}
-
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-ul{
-    padding-left: 1.25rem;
-    padding-top: .625rem;
-    padding-bottom: .625rem;
-}
-
-ol{
-    padding-left: 1.25rem;
-    padding-top: .625rem;
-    padding-bottom: .625rem;
+    background-color: var(--bg-color-footer, #f1f1f1);
+    color: var(--color-footer, #333);
 }
