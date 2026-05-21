@@ -17,7 +17,7 @@ ol[role='list'] {
     list-style: none;
 }
 
-/* Custom styles */
+/* CSS variables */
 :root {
     --color-primary: #b04242;
     --bg-color-primary: #DC9B9B;
@@ -33,6 +33,8 @@ ol[role='list'] {
     --font-size-x-large: 2.0rem;
     --padding-thin: 0.625rem;
     --padding-normal: 1.25rem;
+    --max-width-mobiles: 400px;
+    --max-width-tablets: 1199px;
 
     background: var(--bg-color-primary, #DC9B9B);
     font-family: var(--font-family-primary, "Special Elite", system-ui);
@@ -48,22 +50,23 @@ body {
     line-height: 1.5rem;
 }
 
-h1 {
-    color: var(--color-primary, #b04242); 
-    font-size: var(--font-size-x-large, 2.0rem);
+h1, h2 {
     font-weight: var(--font-weight-bold, 600);
     padding-top: var(--padding-normal, 1.25rem);
     padding-bottom: var(--padding-normal, 1.25rem);
+}
+
+h1 {
+    color: var(--color-primary, #b04242); 
+    font-size: var(--font-size-x-large, 2.0rem);
+    
 }
 
 h2 {
     font-size: var(--font-size-large, 1.5rem);
-    font-weight: var(--font-weight-bold, 600);
-    padding-top: var(--padding-normal, 1.25rem);
-    padding-bottom: var(--padding-normal, 1.25rem);
 }
 
-@media ( max-width: 1199px ) {
+@media ( max-width: 1199px) {
     h1 {
         font-size: 1.23em;
     }
@@ -104,6 +107,10 @@ ol{
     padding-left: 1.25rem;
     padding-top: .625rem;
     padding-bottom: .625rem;
+}
+
+.section-serving-option-one {
+    float: left;
 }
 
 .imgServSuggestOne {

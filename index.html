@@ -1,35 +1,35 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html> <!--html5 dokument-->
 
-<html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles/style.css" rel="stylesheet" />
-        <title>Recept på pannkakor</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<html lang="sv"> <!--språk: svenska-->
+    <head> 
+        <meta charset="UTF-8"> <!--teckenkodning: UTF-8-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--för responsiv design-->
+        <link href="styles/style.css" rel="stylesheet" /> <!--länkar till CSS-filen-->
+        <title>Recept på pannkakor</title> <!--titel som visas i webbläsarens flik-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!--favicon som visas i webbläsarens flik-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--för att optimera laddning av Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--för att optimera laddning av Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> <!--länkar till Google Font "Special Elite"-->
     </head>
     <body>
-        <div class="content">
-            <header>
-                <picture>
-                    <source srcset="images/banner_mobile.png" media="(max-width: 400px)">
-                    <source srcset="images/banner.png" media="(max-width: 1199px)">
-                    <img src="images/banner.png" class="img-banner" alt="">
+        <div class="content"> <!--omslutande div för hela innehållet, används för att centrera och ge padding-->
+            <header> <!--huvudsektion som innehåller bannerbild, titel och introduktion-->
+                <picture> <!--för att visa olika bilder beroende på skärmstorlek-->
+                    <source srcset="images/banner_mobile.png" media="(max-width: 400px)"> <!--bild för mobila enheter-->
+                    <source srcset="images/banner.png"  media="(max-width: 1199px)"> <!--bild för surfplattor och skärmar-->
+                    <img src="images/banner.png" class="img-banner" alt=""> <!--standardbild som visas om inga av de andra källorna matchar, med en klass för styling-->
                 </picture>
-                <h1>Enkelt recept på pannkakor</h1>
-                <p class="p_Upper">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p>
+                <h1>Enkelt recept på pannkakor</h1> <!--huvudrubrik för sidan-->
+                <p class="p_Upper">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p> <!--introduktionstext med en klass för styling-->
             </header>
 
-            <main class="main">
-                <article>
-                    <section>
+            <main class="main"> <!--huvudinnehåll som innehåller receptet, med en klass för styling-->
+                <article> <!--artikel som innehåller alla sektioner av receptet-->
+                    <section> <!--sektion för ingredienser-->
                         <h2>Ingredienser</h2>
                         <p>För 4 portioner</p>
                         <div>
-                            <ul>
+                            <ul> 
                                 <li>2 ½ dl vetemjöl</li>
                                 <li>1/2 tsk salt</li>
                                 <li>6 dl mjölk</li>
@@ -39,7 +39,7 @@
                             </ul>
                         </div>
                     </section>
-                    <section>
+                    <section> <!--sektion för instruktioner-->
                         <h2>Så här gör du</h2>
                         <ol>
                             <li>Blanda mjöl och salt i en bunke.</li>
@@ -49,27 +49,25 @@
                             <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
                             <li>Servera med sylt, bär eller frukt.</li>
                         </ol>
-                            </section>
-                            <section>
-                        <article>
-                            <h2>Serveringsförslag</h2>
-                            <section style="float:left;">
-                                <figure>
-                                    <img class="imgServSuggestOne" src="images/serving-suggestion1.png" alt="Serveringsförslag 1; sylt och grädde" /><br>
-                                    <figcaption>Servera med sylt och grädde</figcaption>
-                                </figure>
-                            </section>
-                            <section>
-                                <figure>
-                                    <img class="imgServSuggestTwo" src="images/serving-suggestion2.png" alt="Serveringsförslag 2; bär eller frukt" />
-                                    <figcaption>Servera med bär eller frukt</figcaption>
-                                </figure>
-                            </section>
-                        </article>
+                    </section>
+                    <section> <!--sektion för serveringsförslag-->
+                        <h2>Serveringsförslag</h2>
+                        <section class="section-serving-option-one"> 
+                            <figure> <!--figure-element som innehåller en bild och en bildtext--> 
+                                <img class="imgServSuggestOne" src="images/serving-suggestion1.png" alt="Serveringsförslag 1; sylt och grädde" /><br>
+                                <figcaption>Servera med sylt och grädde</figcaption>
+                            </figure>
+                        </section>
+                        <section>
+                            <figure> 
+                                <img class="imgServSuggestTwo" src="images/serving-suggestion2.png" alt="Serveringsförslag 2; bär eller frukt" />
+                                <figcaption>Servera med bär eller frukt</figcaption>
+                            </figure>
+                        </section>
                     </section>  
                 </article>
             </main>
-            <footer class="footer">
+            <footer class="footer"> <!--sidfot som innehåller copyright-information, med en klass för styling-->
                 <p>Copyright &copy; 2026 Recept på pannkakor</p>
             </footer>
         </div>
