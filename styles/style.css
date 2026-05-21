@@ -9,41 +9,39 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+    list-style: none;
 }
 
 /* Custom styles */
 :root {
-  --color-primary: #b04242;
-  --bg-color-primary: #DC9B9B;
-  --bg-color-secondary: white;
-  --bg-color-footer: #f1f1f1;
-  --color-footer: #333;
-  --font-family-primary: "Special Elite", system-ui;
-  --font-weight-normal: 400;
-  --font-weight-bold: 600;
-  --font-size-small: 0.8rem;
-  --font-size-medium: 1.0rem;
-  --font-size-large: 1.5rem;
-  --font-size-x-large: 2.0rem;
-  --padding-thin: 0.625rem;
-  --padding-normal: 1.25rem;
+    --color-primary: #b04242;
+    --bg-color-primary: #DC9B9B;
+    --bg-color-secondary: white;
+    --bg-color-footer: #f1f1f1;
+    --color-footer: #333;
+    --font-family-primary: "Special Elite", system-ui;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1.0rem;
+    --font-size-large: 1.5rem;
+    --font-size-x-large: 2.0rem;
+    --padding-thin: 0.625rem;
+    --padding-normal: 1.25rem;
 
     background: var(--bg-color-primary, #DC9B9B);
     font-family: var(--font-family-primary, "Special Elite", system-ui);
     font-weight: var(--font-weight-normal, 400);
     font-style: normal;
-
-   
 }
 
 body {
-     max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: var(--bg-color-secondary, white);
     font-size: var(--font-size-medium, 1.0rem);
