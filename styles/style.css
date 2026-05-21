@@ -29,12 +29,14 @@ ol[role='list'] {
   --font-weight-bold: 600;
   --font-size-small: 0.8rem;
   --font-size-medium: 1.0rem;
-  --font-size-large: 2.0rem;
+  --font-size-large: 1.5rem;
+  --font-size-x-large: 2.0rem;
   --padding-thin: 0.625rem;
   --padding-normal: 1.25rem;
 }
 
 html {
+    background: var(--bg-color-primary, #DC9B9B);
     font-family: var(--font-family-primary, "Special Elite", system-ui);
     font-weight: var(--font-weight-normal, 400);
     font-style: normal;
@@ -50,14 +52,14 @@ body {
 
 h1 {
     color: var(--color-primary, #b04242); 
-    font-size: var(--font-size-large, 2.0rem);
+    font-size: var(--font-size-x-large, 2.0rem);
     font-weight: var(--font-weight-bold, 600);
     padding-top: var(--padding-normal, 1.25rem);
     padding-bottom: var(--padding-normal, 1.25rem);
 }
 
 h2 {
-    font-size: var(--font-size-medium, 1.0rem);
+    font-size: var(--font-size-large, 1.5rem);
     font-weight: var(--font-weight-bold, 600);
     padding-top: var(--padding-normal, 1.25rem);
     padding-bottom: var(--padding-normal, 1.25rem);
