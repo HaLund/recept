@@ -78,7 +78,7 @@ h2 {
     padding-bottom: 1rem;
 }
 
-.imgBanner {
+.img-banner {
     margin-left: 0;
     padding-left: 0;
     text-align: left;
@@ -111,17 +111,14 @@ ol{
 .imgServSuggestOne {
     width: 100%;
     height: auto;
-    max-width: 565px;
-    padding-top: 1.25rem;
-    float: left;
-    padding-right: 2.1rem;
+    max-width: 556px;
+    margin-right:1.5rem;
 }
 
 .imgServSuggestTwo {
     width: 100%;
     height: auto;
-    max-width: 565px;
-    padding-top: 1.25rem;
+    max-width: 556px;
 }
 
 .footer {
