@@ -87,7 +87,7 @@ h2 {
     height: auto;
 }
 
-.p_Upper {
+.header__description {
     background-color: lightgray;
     padding: 1.25rem;
 }
@@ -109,18 +109,15 @@ ol{
     padding-bottom: .625rem;
 }
 
-.section-serving-option-one {
+.section-serving {
     float: left;
 }
 
-.imgServSuggestOne {
-    width: 100%;
-    height: auto;
-    max-width: 556px;
+.section-serving__img-one {
     margin-right:1.5rem;
 }
 
-.imgServSuggestTwo {
+.section-serving__img {
     width: 100%;
     height: auto;
     max-width: 556px;
