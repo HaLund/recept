@@ -17,6 +17,9 @@ ol[role='list'] {
     list-style: none;
 }
 
+/* Tailwind CSS import */
+@import "tailwindcss";
+
 /* CSS variables */
 :root {
     --color-primary: #b04242;
