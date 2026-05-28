@@ -50,6 +50,7 @@ ol[role='list'] {
 
 body {
     max-width: 1200px;
+    min-width:400px;
     margin: 0 auto;
     background-color: var(--bg-color-secondary, white);
     font-size: var(--font-size-medium, 1.0rem);
@@ -65,7 +66,6 @@ h1, h2 {
 h1 {
     color: var(--color-primary, #b04242); 
     font-size: var(--font-size-x-large, 2.0rem);
-    
 }
 
 h2 {
@@ -104,12 +104,10 @@ button{
     display: flex;
     gap: var(--gap-menu-standard, 1.25rem);
     padding: 0;
-    /* justify-content: space-between; */
-    /* margin-block-start: var(--padding-thin, 0.625rem); */
     list-style: none;
 }
 
-.nav-item a{
+.nav-item > a{
     color: var(--color-primary, #b04242);
     font-size: var(--font-size-large, 1.5rem);
 }
@@ -184,4 +182,23 @@ button{
   .nav-list {
     gap: var(--gap-menu-mobile, 0.5rem);
   }
+}
+
+/* grid layout for recipe cards */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.cards {
+    background-color: var(--bg-color-secondary, white);
+    border: 1px solid var(--color-primary, #b04242);
+    border-radius: 8px;
+    text-align: center;
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
 }
