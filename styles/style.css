@@ -73,9 +73,9 @@ h2 {
 }
 
 ul{
-    padding-inline-start: 1.25rem;
-    padding-block-start: .625rem;
-    padding-block-end: .625rem;
+    padding-inline-start: 1.25rem; /* padding-left */
+    padding-block-start: .625rem; /* padding-top */
+    padding-block-end: .625rem; /* padding-bottom */
 }
 
 ol{
@@ -98,6 +98,20 @@ button{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 1.5rem;
+
+    width: min(90%, 1000px);
+
+    margin-inline: auto;
+    margin-block: 2rem;
 }
 
 .nav-list {
@@ -171,7 +185,6 @@ button{
     color: var(--color-footer, #333);
 }
 
-
 /* responsive menu */
 @media screen and (max-width: 600px) {
   .nav-item a{
@@ -186,9 +199,16 @@ button{
 
 /* grid layout for recipe cards */
 .container {
-    display: grid;
+    /* old layout, shrinks the cildren
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1rem; * New template: the children keeps their size */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: min(90%, 1000px);
+    margin-inline: auto;
+    margin-block: 2rem;
 }
 .cards {
     background-color: var(--bg-color-secondary, white);
