@@ -1,41 +1,41 @@
-﻿<!DOCTYPE html> <!--html5 dokument-->
+﻿<!DOCTYPE html>
 
-<html lang="sv"> <!--språk: svenska-->
+<html lang="sv">
     <head> 
-        <meta charset="UTF-8"> <!--teckenkodning: UTF-8-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--för responsiv design-->
-        <link href="styles/style.css" rel="stylesheet" /> <!--länkar till CSS-filen-->
-        <title>Recept på pannkakor</title> <!--titel som visas i webbläsarens flik-->
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!--favicon som visas i webbläsarens flik-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--för att optimera laddning av Google Fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--för att optimera laddning av Google Fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> <!--länkar till Google Font "Special Elite"-->
-        <link href=".output.css" rel="stylesheet"> <!--länkar till Tailwind CSS-utdata-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/style.css" rel="stylesheet" />
+        <title>Recept på pannkakor</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href=".output.css" rel="stylesheet">
     </head>
     <body>
-        <div class="content"> <!--omslutande div för hela innehållet, används för att centrera och ge padding-->
-            <header> <!--huvudsektion som innehåller bannerbild, titel och introduktion-->
-                <picture> <!--för att visa olika bilder beroende på skärmstorlek-->
-                    <source srcset="images/banner_mobile.png" media="(max-width: 400px)"> <!--bild för mobila enheter-->
-                    <source srcset="images/banner.png"  media="(max-width: 1199px)"> <!--bild för surfplattor och skärmar-->
-                    <img src="images/banner.png" class="img-banner" alt=""> <!--standardbild som visas om inga av de andra källorna matchar, med en klass för styling-->
+        <div class="content">
+            <header>
+                <picture>
+                    <source srcset="images/banner_mobile.png" media="(max-width: 400px)">
+                    <source srcset="images/banner.png"  media="(max-width: 1199px)">
+                    <img src="images/banner.png" class="img-banner" alt="">
                 </picture>
-                <nav> <!--navigationsmeny med en klass för styling-->
-                    <ul class="nav-list"> <!--lista över navigationslänkar, med en klass för styling-->
-                        <li class="nav-item"><a href="#Home"><img src="images/favicon.ico" alt="Navigera till startsidan"></a></li> <!--navigationslänk som pekar på sektionen "Ingredienser"-->
-                        <li class="nav-item"><a href="#Recipe">Recept</a></li> <!--navigationslänk som pekar på sektionen "Så här gör du"-->
-                        <li class="nav-item"><a href="#About">Om oss</a></li> <!--navigationslänk som pekar på sektionen "Serveringsförslag"-->
-                        <li class="nav-item"><a href="#contact">Kontakt</a></li> <!--navigationslänk som pekar på sektionen "Kontakt"-->
-                        <li class="nav-item"><a href="#Login"><button>Logga in</button></a></li> <!--navigationslänk som pekar på sektionen "Om oss"-->
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#Home"><img src="images/favicon.ico" alt="Navigera till startsidan"></a></li>
+                        <li class="nav-item"><a href="#Recipe">Recept</a></li>
+                        <li class="nav-item"><a href="#About">Om oss</a></li>
+                        <li class="nav-item"><a href="#contact">Kontakt</a></li>
+                        <li class="nav-item"><a href="#Login"><button>Logga in</button></a></li>
                     </ul>
                 </nav>
-                <h1>Enkelt recept på pannkakor</h1> <!--huvudrubrik för sidan-->
-                <p class="header__description">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p> <!--introduktionstext med en klass för styling-->
+                <h1>Enkelt recept på pannkakor</h1>
+                <p class="header__description">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p>
             </header>
 
-            <main class="main"> <!--huvudinnehåll som innehåller receptet, med en klass för styling-->
-                <article> <!--artikel som innehåller alla sektioner av receptet-->
-                    <section> <!--sektion för ingredienser-->
+            <main class="main">
+                <article>
+                    <section>
                         <h2>Ingredienser</h2>
                         <p>För 4 portioner</p>
                         <div>
@@ -49,7 +49,7 @@
                             </ul>
                         </div>
                     </section>
-                    <section> <!--sektion för instruktioner-->
+                    <section>
                         <h2>Så här gör du</h2>
                         <ol>
                             <li>Blanda mjöl och salt i en bunke.</li>
@@ -60,10 +60,10 @@
                             <li>Servera med sylt, bär eller frukt.</li>
                         </ol>
                     </section>
-                    <section> <!--sektion för serveringsförslag-->
+                    <section>
                         <h2>Serveringsförslag</h2>
                         <section class="section-serving"> 
-                            <figure> <!--figure-element som innehåller en bild och en bildtext--> 
+                            <figure>
                                 <img class="section-serving__img section-serving__img-one" src="images/serving-suggestion1.png" alt="Serveringsförslag 1; sylt och grädde" /><br>
                                 <figcaption>Servera med sylt och grädde</figcaption>
                             </figure>
@@ -77,7 +77,7 @@
                     </section>  
                 </article>
             </main>
-            <footer class="footer"> <!--sidfot som innehåller copyright-information, med en klass för styling-->
+            <footer class="footer">
                 <p>Copyright &copy; 2026 Recept på pannkakor</p>
             </footer>
         </div>

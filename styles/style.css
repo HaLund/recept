@@ -22,11 +22,12 @@ ol[role='list'] {
 
 /* CSS variables */
 :root {
-    --color-primary: #b04242;
-    --bg-color-primary: #DC9B9B;
-    --bg-color-secondary: white;
-    --bg-color-footer: #f1f1f1;
-    --color-footer: #333;
+    --color-primary: hsl(0, 45.45%, 47.45%);
+    --bg-color-primary: hsl(0, 48.15%, 73.53%);
+    --bg-color-secondary: hsl(0, 0%, 100%);
+    --bg-color-tertiary: hsl(200, 0%, 83%);
+    --bg-color-footer: hsl(0, 0%, 94.51%);
+    --color-footer: hsl(0, 0%, 20%);
     --font-family-primary: "Special Elite", system-ui;
     --font-weight-normal: 400;
     --font-weight-bold: 600;
@@ -42,17 +43,18 @@ ol[role='list'] {
     --gap-menu-mobile: 0.5rem;
     --gap-menu-standard: 1.25rem;
 
-    background: var(--bg-color-primary, #DC9B9B);
+    background: var(--bg-color-primary, hsl(0, 48.15%, 73.53%));
     font-family: var(--font-family-primary, "Special Elite", system-ui);
     font-weight: var(--font-weight-normal, 400);
     font-style: normal;
 }
 
 body {
+    
     max-width: 1200px;
     min-width:400px;
     margin: 0 auto;
-    background-color: var(--bg-color-secondary, white);
+    background-color: var(--bg-color-secondary, hsl(0, 0%, 100%));
     font-size: var(--font-size-medium, 1.0rem);
     line-height: 1.5rem;
 }
@@ -64,7 +66,7 @@ h1, h2 {
 }
 
 h1 {
-    color: var(--color-primary, #b04242); 
+    color: var(--color-primary, hsl(0, 45.45%, 47.45%)); 
     font-size: var(--font-size-x-large, 2.0rem);
 }
 
@@ -93,7 +95,7 @@ ol{
 button{
     font-size: var(--font-size-medium, 1.0rem);
     padding: var(--padding-thin, 0.625rem) var(--padding-normal, 1.25rem);
-    background-color: var(--color-primary, #b04242);
+    background-color: var(--color-primary, hsl(0, 45.45%, 47.45%));
     color: white;
     border: none;
     border-radius: 4px;
@@ -102,14 +104,10 @@ button{
 
 .grid {
     display: grid;
-
     grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-
+    repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
-
     width: min(90%, 1000px);
-
     margin-inline: auto;
     margin-block: 2rem;
 }
@@ -122,7 +120,7 @@ button{
 }
 
 .nav-item > a{
-    color: var(--color-primary, #b04242);
+    color: var(--color-primary, hsl(0, 45.45%, 47.45%));
     font-size: var(--font-size-large, 1.5rem);
 }
 .nav-item:nth-child(1) {
@@ -155,13 +153,12 @@ button{
 }
 
 .header__description {
-    background-color: lightgray;
+    background-color: var(--bg-color-tertiary, hsl(200, 0%, 83%));
     padding: 1.25rem;
 }
 
 .main {
     padding: 1rem 0;
-    
 }
 
 .section-serving {
@@ -204,22 +201,17 @@ button{
     gap: 1rem; * New template: the children keeps their size */
 
     display: grid;
-     /* grid-template-columns: auto auto auto; repeat(auto-fit, minmax(220px, 1fr)); */
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
-    /* width: min(90%, 1000px); */
     margin-inline: auto;
     margin-block: 2rem;
 }
 .cards {
-    background-color: var(--bg-color-secondary, white);
-    border: 1px solid var(--color-primary, #b04242);
+    background-color: var(--bg-color-secondary, hsl(0, 0%, 100%));
+    border: 1px solid var(--color-primary, hsl(0, 45.45%, 47.45%));
     border-radius: 8px;
     text-align: center;
-    /* width: 1fr;
-    height: auto; */
-    /* min-width:360px; */
-    /* overflow-y:auto; */
+
     img{
         width: 100%;
         height: auto;
