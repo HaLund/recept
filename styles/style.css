@@ -57,6 +57,10 @@ body {
     background-color: var(--bg-color-secondary, hsl(0, 0%, 100%));
     font-size: var(--font-size-medium, 1.0rem);
     line-height: 1.5rem;
+
+    /* display:grid;
+    justify-content: flex-start;
+    gap: 1.25rem;  */
 }
 
 h1, h2 {
@@ -216,5 +220,39 @@ button{
         width: 100%;
         height: auto;
         border-radius: 8px 8px 0 0;
+    }
+}
+
+.contact {
+    display: grid;
+    gap: 1.5rem;
+    margin: 4rem 0.83rem;
+
+    h2{
+        padding: 0;
+        margin-inline-start: -0.75rem;
+    }
+}
+.form-group{
+    display:grid;
+    justify-content: flex-start;
+    margin-block-start: 1rem;
+    margin-inline-start: -0.75rem;
+    width:341px;
+    
+    select{
+        padding: 0.5rem;
+        font-size: var(--font-size-medium, 1.0rem);
+        width: 342px;
+    }
+
+    input, textarea{
+        padding: 0.5rem;
+        font-size: var(--font-size-medium, 1.0rem);
+        width: 341px;
+    } 
+    
+    button{
+        margin-block-start: 1.25rem;
     }
 }
